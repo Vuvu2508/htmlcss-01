@@ -6,6 +6,11 @@
     --primary-color: #0f1b4c;
 }
 
+html,
+body {
+    scroll-behavior: smooth;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -60,9 +65,12 @@ a {
 }
 
 .hero-wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     position: relative;
     background: #e6f0ff;
-    height: calc(100vh - 90px);
+    height: calc(100vh - 95px);
 }
 
 .navbar {
@@ -104,9 +112,6 @@ a {
     border-radius: 8px;
 }
 /* Hero info */
-.hero {
-    padding: 130px;
-}
 
 .hero .info {
     width: 51%;
